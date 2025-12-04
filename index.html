@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color:aliceblue;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    .header {
+        background-color: orange;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+        color: orange;
+        border-bottom: 2px solid orange;
+    }
+    button {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .review {
+        background-color: lightgrey;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Table Dining</h1>
+    <p style="color: white;">Farm-to-Table Dining</p>
+</div>
+<div style="width: 80%; margin: 0 auto;">
+    <div id="menu">
+        <h2>Our Menu</h2>
+        <table cellspacing="20">
+            <tr>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Matar Panner</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Chole Bature</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <div id="reservations">
+        <h2>Book a Table</h2>
+        <form onsubmit="alert('Table requested!');">
+            <label for="name">Name:</label><br>
+            <input id="name" type="text" required placeholder="Enter your Name"><br><br>
+            
+            <label>Date and Time:</label><br>
+            <input type="datetime-local" required><br><br>
+            
+            <label for="guest">Guests:</label><br>
+            <input type="number" id="guest" min="1" max="10"><br><br>
+            
+            <button type="submit">Reserve Now</button>
+        </form>
+    </div>
+    <div id="reviews">
+        <h2>Customer Love</h2>
+        <div class="review">
+            "Very Tasty!!!!!!!"
+        </div>
+        <div class="review">
+            "Very fresh!!!!!!!!!"
+        </div>
+    </div>
+</div>
+</body>
+</html>
